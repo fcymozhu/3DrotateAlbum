@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+}
+body {
+  background: url(../img/lunbo/bac.jpg) no-repeat;
+}
+.wrapper {
+  width: 480px;
+  height: 300px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  animation: movepic 40s linear infinite;
+}
+.wrapper img {
+  width: 480px;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrapper img:nth-child(1) {
+  transform: rotateY(0deg) translateZ(750px);
+}
+.wrapper img:nth-child(2) {
+  transform: rotateY(36deg) translateZ(750px);
+}
+.wrapper img:nth-child(3) {
+  transform: rotateY(72deg) translateZ(750px);
+}
+.wrapper img:nth-child(4) {
+  transform: rotateY(108deg) translateZ(750px);
+}
+.wrapper img:nth-child(5) {
+  transform: rotateY(144deg) translateZ(750px);
+}
+.wrapper img:nth-child(6) {
+  transform: rotateY(180deg) translateZ(750px);
+}
+.wrapper img:nth-child(7) {
+  transform: rotateY(216deg) translateZ(750px);
+}
+.wrapper img:nth-child(8) {
+  transform: rotateY(252deg) translateZ(750px);
+}
+.wrapper img:nth-child(9) {
+  transform: rotateY(288deg) translateZ(750px);
+}
+.wrapper img:nth-child(10) {
+  transform: rotateY(324deg) translateZ(750px);
+}
+@keyframes movepic {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: rotateX(20deg) rotateY(180deg);
+  }
+  50% {
+    transform: rotateX(0) rotateY(360deg);
+  }
+  75% {
+    transform: rotateX(-20deg) rotateY(540deg);
+  }
+  100% {
+    transform: rotateX(0deg) rotateY(720deg);
+  }
+}
